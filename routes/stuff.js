@@ -10,7 +10,7 @@ const stuffCtrl = require('../controllers/stuff');
 
 router.post('/', auth, multer, stuffCtrl.createThing);
 
-router.get('/', auth, stuffCtrl.getAllThings);
+router.get('/', stuffCtrl.getAllThings);
 
 router.get('/:id', auth, stuffCtrl.getOneThing);
 
